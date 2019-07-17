@@ -1,0 +1,21 @@
+# Request Data
+extend type Mutation {
+  # Create a new Sighting entry
+  createSighting(
+    addressType: String
+    borough: String
+    city: String
+    coordLat: Float
+    coordLong: Float
+    closedDate: String
+    createdDate: String
+    dueDate: String!
+    latitude: Float
+    locationType: String
+    longitude: Float
+    sightingId: String!
+    status: String
+    street: String
+    zip: String
+  ): Sighting
+}

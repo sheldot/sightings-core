@@ -1,0 +1,46 @@
+{
+  "name": "sightings-core",
+  "version": "1.0.0",
+  "description": "GraphQL, Node, Express, PostgreSQL",
+  "main": "index.js",
+  "engines": {
+    "node": "11.x"
+  },
+  "author": "Sheldon Trotman",
+  "private": false,
+  "homepage": "https://github.com/sheldot/sightings-core#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sheldot/sightings-core.git"
+  },
+  "scripts": {
+    "import-restaurant": "nodemon scripts/import_restaurant.script",
+    "import-sighting": "nodemon scripts/import_sighting.script",
+    "start": "nodemon src/app.index"
+  },
+  "dependencies": {
+    "apollo-server-express": "^2.6.7",
+    "app-module-path": "^2.2.0",
+    "csv-parse": "^4.4.3",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "graphql": "^14.4.2",
+    "path": "^0.12.7",
+    "pg": "^7.11.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.9.4",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.0",
+    "@babel/core": "^7.5.0",
+    "@babel/node": "^7.5.0",
+    "@babel/preset-env": "^7.5.0",
+    "babel-plugin-inline-import": "^3.0.0",
+    "core-js": "^3.1.4",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.0",
+    "nodemon": "^1.19.1"
+  }
+}

@@ -1,0 +1,9 @@
+# Request Data
+extend type Query {
+  # Get all restaurants
+  restaurants(
+    city: String
+    category: String
+    nearCoords: String
+  ): [Restaurant!]
+}

@@ -1,0 +1,18 @@
+# Models a sighting
+type Sighting {
+  _id: ID
+  addressType: String
+  borough: String
+  city: String
+  coordinates: Location
+  closedDate: String
+  createdDate: String
+  dueDate: String
+  latitude: Float
+  locationType: String
+  longitude: Float
+  sightingId: String
+  status: String
+  street: String
+  zip: String
+}

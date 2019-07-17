@@ -1,0 +1,15 @@
+# Models a restaurant
+type Restaurant {
+  _id: ID
+  categoryCode: String!
+  categoryName: String!
+  city: String
+  latitude: Float
+  longitude: Float
+  name: String!
+  placeId: String!
+  polygon: [Location!]
+  state: String
+  street: String
+  zip: String
+}

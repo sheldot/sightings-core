@@ -1,0 +1,18 @@
+# Request Data
+extend type Mutation {
+  # Create a new Restaurant entry
+  createRestaurant(
+    categoryCode: String!
+    categoryName: String!
+    city: String
+    latitude: Float
+    longitude: Float
+    name: String!
+    placeId: String!
+    polygonLats: [Float!]
+    polygonLongs: [Float!]
+    state: String
+    street: String
+    zip: String
+  ): Restaurant
+}

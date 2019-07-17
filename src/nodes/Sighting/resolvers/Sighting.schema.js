@@ -1,0 +1,20 @@
+export default {
+  _id: parent => parent.id,
+  addressType: parent => parent.addressType,
+  borough: parent => parent.incidentBorough,
+  city: parent => parent.incidentCity,
+  coordinates: parent => ({
+    lat: parent.locationCoords.coordinates[0],
+    long: parent.locationCoords.coordinates[1],
+  }),
+  closedDate: parent => parent.sightingClosedDate,
+  createdDate: parent => parent.sightingCreatedDate,
+  dueDate: parent => parent.sightingDueDate,
+  latitude: parent => parent.locationLatitude,
+  locationType: parent => parent.locationType,
+  longitude: parent => parent.locationLongitude,
+  sightingId: parent => parent.sightingId,
+  status: parent => parent.incidentStatus,
+  street: parent => parent.incidentAddress,
+  zip: parent => parent.incidentZip,
+};

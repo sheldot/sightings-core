@@ -1,0 +1,8 @@
+# Request Data
+extend type Query {
+  # Get all sightings
+  sightings(
+    addressType: String
+    status: String
+  ): [Sighting!]
+}

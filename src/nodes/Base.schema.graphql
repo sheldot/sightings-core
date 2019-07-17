@@ -1,0 +1,20 @@
+# Functions to change information
+type Mutation {
+  version: String
+}
+
+# Data available for requesting
+type Query {
+  version: String
+}
+
+# Location point
+type Location {
+  lat: Float!
+  long: Float!
+}
+
+schema {
+  query: Query
+  mutation: Mutation
+}

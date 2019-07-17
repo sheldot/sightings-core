@@ -1,10 +1,10 @@
-import sightingtMutationResolvers from './Sighting.mutation';
-import sightingtQueryResolvers from './Sighting.query';
-import sightingtSchemaResolvers from './Sighting.schema';
+import sightingMutationResolvers from './Sighting.mutation';
+import sightingQueryResolvers from './Sighting.query';
+import sightingSchemaResolvers from './Sighting.schema';
 
 export default {
   schemaRootName: 'Sighting',
-  Mutation: sightingtMutationResolvers,
-  Query: sightingtQueryResolvers,
-  Schema: sightingtSchemaResolvers,
+  Mutation: sightingMutationResolvers,
+  Query: sightingQueryResolvers,
+  Schema: sightingSchemaResolvers,
 };
